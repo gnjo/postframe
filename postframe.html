@@ -4,5 +4,6 @@
  <script>
   let pwindow=window.parent;
   if(pwindow) pwindow.postMessage('xyz')
+  if(pwindow) pwindow.onmessage=(e)=>{console.log(e,e.data)}
  </script>
 </body>
